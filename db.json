@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "victor@gmail.com",
+      "password": "$2a$10$EBugbSoTZSSO9mgWPrX12OABlESzRQ6AOhOSEehUM6EsNk.p65/hi",
+      "nome": "victor",
+      "id": 1
+    }
+  ],
+  "noticias": [
+    {
+      "id": 1,
+      "email": "umemailqualquer@gmail.com",
+      "senha": "element51"
+    },
+    {
+      "id": 2,
+      "email": "outroemailqualquer@gmail.com",
+      "senha": "element54"
+    }
+  ]
+}

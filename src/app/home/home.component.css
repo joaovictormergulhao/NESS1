@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baner{ 
+    height: 540px;
+    background-image: url(../../assets/image/baner.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: black;
+    padding: 10px;
+}
+
+.menu{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itens-menu{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    padding: 5px 0px 0px 10px;
+    text-decoration: none;
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.search {
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgba(196,196,196, 0.3);
+}
+
+.search input{
+    flex: 1;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 16px;
+    background: none;
+    align-items: center;
+    color: #E5E5E5;
+}
+
+.search img{
+    width: 15px;
+}
+
+
+.text-baner{
+    height: 500px;
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.text-baner h1{
+    font-size: 60px;
+}
+
+.secao-jogos{
+    height: 1000px;
+    background-color: #121212;
+}
+
+.destaques{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.destaques img{
+    width: 80px;
+    margin-top: 15px;
+}
+
+.destaques h1{
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.jogos{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.jogos img{
+    width: 200px;
+    margin-top: 20px;
+}
+
+.jogos a{
+    text-decoration: none;
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jogos a h1{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+.section-description img{
+    width: 600px;
+}
+
+.section-description{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#carrossel img{
+    display: none;
+}
+
+.banner-ativo{
+    display: flex;
+}
+
+.text-description{
+    width: 540px;
+}
+
+.text-description h2, .text-description p{
+    color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.text-description a{
+    background-color: #E5E5E5;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.text-description a:hover{
+    background-color: rgba(247,247,247,0.7);
+}
+
+.text-description p{
+    margin-bottom: 80px;
+    font-size: 16px;
+}
+
+
+footer{
+    height: 530px;
+    background-color: rgb(32,32,32);
+}
+
+.container-footer{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.title-footer{
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E5E5E5;
+    margin-top: 50px;
+}
+
+.title-footer h1, .title-footer h2, .title-footer p{
+    display: flex;
+    justify-content: center;
+}
+
+
+.line-footer{
+    border: 0;
+    border-top: 1px solid #CCC;
+}
+
+.img-footer img{
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 130px;
+}
+
+.text-footer{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.text-footer p{
+    color: #E5E5E5;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body::-webkit-scrollbar {
+	width: 16px;  /* largura de toda a barra de rolagem */
+	
+}
+
+body::-webkit-scrollbar-track {
+	background: rgb(32,32,32); /* Cor de fundo 
+	 44, 16, 66*/
+}
+  
+body::-webkit-scrollbar-thumb {
+	background-color: #121212;    /* cor do polegar de rolagem */
+	border-radius: 25px;       /* redondeza do polegar de rolagem */
+	border: 4px solid rgb(32,32,32);  /*cria preenchimento ao redor do polegar de rolagem */
+}
+
+.barras{
+    display: none;
+}
+
+
+/*estilizações para tablet*/
+@media screen and (max-width: 1200px){
+    .barras{
+        display: none;
+    }
+
+    .baner{
+        height: 273px;
+        width: 768px;
+        background-image: url(../../assets/image/baner.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .barras{
+        display: none;
+    }
+
+    .menu{
+        width: 500px;
+    }
+
+    .itens-menu{
+        width: 300px;
+        display: inline-block;
+
+    }
+    .search{
+        width: 140px;
+        padding: 5px;
+        height: 23px;
+    }
+
+    .search input{
+        height: 12px;
+    }
+
+    .text-baner{
+        margin-top: 50px;
+        height: 140px;
+        margin-left: 0px;
+        align-items: center;
+    }
+
+    .text-baner h1{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    .secao-jogos{
+        width: 768px;
+        height: 970px;
+    }
+
+    .destaques{
+        width: 680px;
+        justify-content: flex-start;
+        margin-left: 60px;
+    }
+    
+    .destaques img{
+        width: 50px;
+        margin-top: 8px;
+        margin-left: 490px;
+    }
+    
+    .destaques h1{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+
+    .jogos{
+        width: 700px;
+        margin-left: 52px;
+    }
+    
+    .jogos img{
+        width: 145px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    
+    .jogos a h1{
+        margin-top: 7px;
+        font-size: 13px;
+        margin-left: 25px;
+    }
+
+    #battle{
+        display: none;
+    }
+
+    .section-description{
+        display: inline-block;
+        margin-top: 60px;
+    }
+
+    .section-description img{
+        width: 768px;
+        height: 350px;
+    }
+
+    .text-description{
+        width: 600px;
+        margin-left: 85px;
+    }
+
+    .text-description h2{
+        font-size: 17px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .text-description p{
+        width: 600px;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .text-description a{
+        padding: 15px;
+        font-size: 15px;
+    }
+    footer{
+        width: 768px;
+        height: 370px;
+    }
+
+    .container-footer{
+        width: 768px;
+    }
+
+    .title-footer h1{
+        font-size: 30px;
+    }
+
+    .title-footer h2{
+        font-size: 17px;
+    }
+    
+    .line-footer{
+        width: 700px;
+        margin: auto;
+    }
+
+    .title-footer p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .img-footer img{
+        width: 90px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .text-footer{
+        width: 320px;
+    }
+
+    .text-footer p{
+        font-size: 11px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+}
+
+/*estilizações para smartphone*/
+@media screen and (max-width: 768px) {
+    .barras{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .baner{
+        height: 200px;
+        width: 315px;
+        background-image: url(../../assets/image/image-face.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .menu{
+        width: 300px;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }
+
+    .menu a {
+        padding: 0px;
+    }
+
+    .itens-menu{
+        display: none;
+        flex-direction: column;
+        width: 95px;
+        height: 90px;
+        position: absolute;
+        right: -5px;
+        top: 27px;
+        background-color: rgba(0,0,0,1);
+    }
+
+
+    .search {
+        width: 140px;
+        padding: 5px;
+        height: 23px;
+    }
+    .search input{
+        padding-bottom: 15px;
+    }
+
+    .text-baner{
+        height: 140px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .text-baner h1{
+        margin: auto;
+        font-size: 30px;
+    }
+
+    .secao-jogos{
+        width: 315px;
+        height: 730px;
+    }
+
+    .destaques{
+        width: 280px;
+    }
+    
+    .destaques img{
+        width: 50px;
+        margin-top: 8px;
+    }
+    
+    .destaques h1{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+
+    .jogos{
+        width: 300px;
+        margin-left: 20px;
+    }
+    
+    .jogos img{
+        width: 77px;
+        margin-top: 20px;
+    }
+    
+    .jogos a h1{
+        margin-top: 7px;
+        font-size: 7px;
+    }
+
+    #battle{
+        display: none;
+    }
+
+    .section-description{
+        display: block;
+        margin-top: 30px;
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .section-description img{
+        width: 250px;
+    }
+
+    .section-description h2{
+        font-size: 17px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .section-description p{
+        width: 250px;
+        font-size: 13px;
+        margin-bottom: 50px;
+    }
+
+    .section-description a{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    footer{
+        width: 315px;
+        height: 370px;
+    }
+
+    .container-footer{
+        width: 315px;
+    }
+
+    .title-footer h1{
+        font-size: 17px;
+    }
+
+    .title-footer h2{
+        font-size: 13px;
+    }
+    
+    .line-footer{
+        width: 250px;
+        margin: auto;
+    }
+
+    .title-footer p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .img-footer img{
+        width: 90px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .text-footer{
+        width: 260px;
+    }
+
+    .text-footer p{
+        font-size: 9px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
